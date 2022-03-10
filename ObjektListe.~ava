@@ -92,9 +92,9 @@ class ObjektListe{
     if (index==size-1) {
       return letzter;
     } // end of if
-    if (index>=size)return null;
-    if (index<0) return null;
-    
+    if (index>=size) {
+      return null;
+    } // end of if
     ObjektListenelement temp=erster;
     for (int i=0;i<index ;i++ ) {
       temp=temp.getFolgender();
@@ -104,9 +104,7 @@ class ObjektListe{
   
   public ObjektListenelement remove(int index){
     if (index==0) return removeFirst();
-    if (index+1==size) return removeLast();   
-    if (index+1>size) return null;
-    if (index<0) return null;
+    if (index+1==size) return removeLast();
     size--;
     ObjektListenelement temp=get(index);
     ObjektListenelement davor=temp.getVorheriger();

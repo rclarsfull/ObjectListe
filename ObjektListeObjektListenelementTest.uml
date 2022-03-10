@@ -1,0 +1,105 @@
+﻿[Files]
+File0=U:\ObjektListe\ObjektListe.java
+File1=U:\ObjektListe\ObjektListenelement.java
+File2=U:\ObjektListe\Test.java
+
+[Box:  - ObjektListe]
+X=77
+Y=30
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=8
+FontName=Segoe UI
+
+[Object:  - objektliste1]
+X=619
+Y=245
+Name=objektliste1
+Typ=ObjektListe
+
+[Box:  - ObjektListenelement]
+X=39
+Y=340
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=8
+FontName=Segoe UI
+
+[Object:  - objektlistenelement1]
+X=672
+Y=579
+Name=objektlistenelement1
+Typ=ObjektListenelement
+
+[Object:  - objektlistenelement2]
+X=669
+Y=458
+Name=objektlistenelement2
+Typ=ObjektListenelement
+
+[Object:  - objektlistenelement3]
+X=665
+Y=364
+Name=objektlistenelement3
+Typ=ObjektListenelement
+
+[Object:  - objektlistenelement4]
+X=70
+Y=633
+Name=objektlistenelement4
+Typ=ObjektListenelement
+
+[Box:  - Test]
+X=665
+Y=80
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=8
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=8
+ShowObjectDiagram=0
+
+[Connections]
+V0=ObjektListe#ObjektListenelement#AssociationDirected####0#0#0###0#0
+V1=objektliste1#ObjektListe#InstanceOf####0#0#0###0#0
+V2=ObjektListenelement#ObjektListenelement#AssociationBidirectional####1#0#0###0#0
+V3=objektlistenelement1#ObjektListenelement#InstanceOf####0#0#0###0#0
+V4=objektlistenelement2#ObjektListenelement#InstanceOf####0#0#0###0#0
+V5=objektlistenelement3#ObjektListenelement#InstanceOf####0#0#0###0#0
+V6=objektlistenelement4#ObjektListenelement#InstanceOf####0#0#0###0#0
+V7=objektliste1#objektlistenelement3#AssociationDirected####0#0#0###0#0
+V8=objektliste1#objektlistenelement1#AssociationDirected####0#0#0###0#0
+V9=objektlistenelement1#objektlistenelement2#AssociationDirected####0#0#0###0#0
+V10=objektlistenelement2#objektlistenelement3#AssociationDirected####0#0#0###0#0
+V11=objektlistenelement2#objektlistenelement1#AssociationDirected####0#0#0###0#0
+V12=objektlistenelement3#objektlistenelement2#AssociationDirected####0#0#0###0#0
+
+[Interactive]
+I0=
+I1=ObjektListe objektliste1 = new ObjektListe();
+I2=objektliste1.addFirstElement(null);
+I3=objektliste1.addFirstElement(null);
+I4=objektliste1.addFirstElement(null);
+I5=objektliste1.addLastElement(null);
+I6=objektliste1.remove(1);
+I7=objektlistenelement2.getVorheriger();
+I8=objektliste1.getSize();
+I9=objektliste1.get(1);
+
